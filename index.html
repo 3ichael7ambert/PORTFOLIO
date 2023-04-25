@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>My Name</h1>
+		<h2>Software Engineer</h2>
+		<p>My goal statement goes here.</p>
+	</header>
+	<nav>
+		<ul>
+			<li>
+				<a href="#" onclick="toggleSection('section-1')">Project 1</a>
+				<h2>Project 1</h2>
+				<p>A brief description of project 1.</p>
+			</li>
+			<li>
+				<a href="#" onclick="toggleSection('section-2')">Project 2</a>
+				<h2>Project 2</h2>
+				<p>A brief description of project 2.</p>
+			</li>
+			<li>
+				<a href="#" onclick="toggleSection('section-3')">Project 3</a>
+				<h2>Project 3</h2>
+				<p>A brief description of project 3.</p>
+			</li>
+			<li>
+				<a href="#" onclick="toggleSection('section-4')">Project 4</a>
+				<h2>Project 4</h2>
+				<p>A brief description of project 4.</p>
+			</li>
+		</ul>
+	</nav>
+	<section id="section-1" class="hide">
+		<h2>Project 1</h2>
+		<p>More detailed information about project 1.</p>
+		<p><a href="#">Link to project 1</a></p>
+	</section>
+	<section id="section-2" class="hide">
+		<h2>Project 2</h2>
+		<p>More detailed information about project 2.</p>
+		<p><a href="#">Link to project 2</a></p>
+	</section>
+	<section id="section-3" class="hide">
+		<h2>Project 3</h2>
+		<p>More detailed information about project 3.</p>
+		<p><a href="#">Link to project 3</a></p>
+	</section>
+	<section id="section-4" class="hide">
+		<h2>Project 4</h2>
+		<p>More detailed information about project 4.</p>
+		<p><a href="#">Link to project 4</a></p>
+	</section>
+	<section>
+		<h2>Contact Me</h2>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" required>
+			<label for="email">Email:</label>
+			<input type="email" id="email" name="email" required>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" required></textarea>
+			<input type="submit" value="Send">
+		</form>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
