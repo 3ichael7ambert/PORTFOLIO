@@ -26,6 +26,6 @@ JASMINE
 JEST  
 Postgres  
 SQLAlchemy  
-Markdown 
-Shell 
-Git   
+Markdown  
+Shell  
+Git    
