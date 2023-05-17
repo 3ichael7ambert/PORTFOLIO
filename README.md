@@ -20,9 +20,9 @@ HTML
 CSS  
 JAVASCRIPT  
 jQuery  
-API 
-PYTHON 
-JASMINE 
+API  
+PYTHON  
+JASMINE  
 JEST  
 Postgres  
 SQLAlchemy  
