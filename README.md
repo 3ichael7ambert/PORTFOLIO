@@ -2,18 +2,20 @@
 
 >Here is my Portofolio Piece
 
-Javascript  
+##Javascript  
 ---  
 Fruit Search  
 Jeopardy  
 
 
 
-Python  
+##Python  
 ---  
 Boggle  
 Survey   
 
+###LANGUAGES  
+---  
 HTML  
 CSS  
 JAVASCRIPT  
