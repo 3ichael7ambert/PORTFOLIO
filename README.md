@@ -10,3 +10,13 @@ Javascript
 
 Python
 ---
+
+
+HTML
+CSS
+JAVASCRIPT
+PYTHON
+JASMINE
+JEST
+Postgres
+SQLAlchemy
