@@ -21,7 +21,9 @@ CSS
 JAVASCRIPT  
 jQuery  
 API  
-PYTHON  
+PYTHON 
+FLASK  
+JINJA  
 JASMINE  
 JEST  
 Postgres  
