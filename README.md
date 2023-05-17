@@ -1,26 +1,29 @@
 # PORTFOLIO
 
-Here is my Portofolio Piece
+>Here is my Portofolio Piece
 
-Javascript
----
-Fruit Search. 
+Javascript  
+---  
+Fruit Search  
 Jeopardy  
 
 
 
-Python
----
+Python  
+---  
 Boggle  
-Survey.  
+Survey   
 
-HTML. 
-CSS. 
-JAVASCRIPT. 
-jQuery. 
-API. 
-PYTHON. 
-JASMINE. 
-JEST.  
+HTML  
+CSS  
+JAVASCRIPT  
+jQuery  
+API 
+PYTHON 
+JASMINE 
+JEST  
 Postgres  
-SQLAlchemy.  
+SQLAlchemy  
+Markdown
+Shell
+Git. 
