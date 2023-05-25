@@ -15,6 +15,13 @@ Jeopardy
 Boggle  
 Survey   
 
+## Terminal 
+---
+Flask
+Postgres
+Git
+Terminal
+
 ### LANGUAGES  
 ---  
 HTML  
