@@ -91,3 +91,17 @@ body {
     display: none;
   }
   
+
+  #socialmedia {
+    position: fixed;
+    top: 50%;
+    left: -400px;
+    height: 25px;
+    width: 410px;
+    transition: all 500ms;
+    background-color: bisque;
+  }
+
+  #socialmedia:hover {
+    left: 0;
+  }
