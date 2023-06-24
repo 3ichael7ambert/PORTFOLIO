@@ -22,7 +22,7 @@ Postgres
 Git
 Terminal
 
-### LANGUAGES  
+### Technologies  
 ---  
 HTML  
 CSS  
