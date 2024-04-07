@@ -1,43 +1,20 @@
-// Function to show/hide project sections
-function toggleSection(sectionId) {
-    const section = document.getElementById(sectionId);
-    if (section.classList.contains("hide")) {
-      section.classList.remove("hide");
-    } else {
-      section.classList.add("hide");
-    }
-  }
-  
-  // Add event listeners to project headings
-  const projectHeadings = document.querySelectorAll(".project-heading");
-  projectHeadings.forEach(function (heading) {
-    heading.addEventListener("click", function () {
-      const projectId = this.getAttribute("data-project");
-      toggleSection(projectId);
+document.addEventListener("DOMContentLoaded", function () {
+  const sections = document.querySelectorAll(".section");
+  const navLinks = document.querySelectorAll(".fixed-nav a");
+
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute("href").substring(1);
+      const targetSection = document.getElementById(targetId);
+      scrollToSection(targetSection);
     });
   });
 
-
-///external xml
-function getData(file) {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      displayData(this.responseXML);
-    }
-  };
-  xhttp.open("GET", file, true);
-  xhttp.send();
-}
-
-function displayData(xml) {
-  var items = xml.getElementsByTagName("item");
-  var output = "<ul>";
-  for (var i = 0; i < items.length; i++) {
-    var title = items[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
-    var description = items[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
-    output += "<li><strong>" + title + "</strong>: " + description + "</li>";
+  function scrollToSection(section) {
+    window.scrollTo({
+      top: section.offsetTop,
+      behavior: "smooth",
+    });
   }
-  output += "</ul>";
-  document.getElementById("data").innerHTML = output;
-}
+});

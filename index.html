@@ -1,97 +1,362 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-</head>
-<body>
-	<header>
-		<h1>My Name</h1>
-		<h2>Software Engineer</h2>
-		<p>My goal statement goes here.</p>
-	</header>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="fixed-nav">
+      <ul>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#experience">Software Engineering</a></li>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#book">Book</a></li>
+        <li><a href="#clothing">Clothing Line</a></li>
+      </ul>
+    </nav>
 
-	<div id="socialmedia">
-		<a href="">facebook</a>|
-		<a href="">insta</a>|
-		<a href="">twitter</a>|
-		<a href="">deviant</a>
-	</div>
-	
-	<nav>
-		<ul>
-			<li>
-				<a href="#" onclick="toggleSection('section-1')">Project 1</a>
-				<h2>Project 1</h2>
-				<p>A brief description of project 1.</p>
-			</li>
-			<li>
-				<a href="#" onclick="toggleSection('section-2')">Project 2</a>
-				<h2>Project 2</h2>
-				<p>A brief description of project 2.</p>
-			</li>
-			<li>
-				<a href="#" onclick="toggleSection('section-3')">Project 3</a>
-				<h2>Project 3</h2>
-				<p>A brief description of project 3.</p>
-			</li>
-			<li>
-				<a href="#" onclick="toggleSection('section-4')">Project 4</a>
-				<h2>Project 4</h2>
-				<p>A brief description of project 4.</p>
-			</li>
-		</ul>
-	</nav>
+    <section id="resume" class="section">
+      <section id="credentials" type="credentials" category="credentials">
+        <h2>Certificates</h2>
+        <ul>
+          <li>
+            <h3>Web Development</h3>
+            <p>Institutions: High School, Springboard</p>
+            <div
+              data-iframe-width="150"
+              data-iframe-height="270"
+              data-share-badge-id="4f486306-2933-4267-8a3f-a0e34a18b9bf"
+              data-share-badge-host="https://www.credly.com"></div>
+            <script
+              type="text/javascript"
+              async
+              src="//cdn.credly.com/assets/utilities/embed.js"></script>
+          </li>
+          <!-- Add similar elements for other certificates -->
+        </ul>
 
+        <h2>Skills</h2>
+        <p>
+          Skills include PHP, ActionScript, HTML, CSS, JavaScript, Python,
+          React, Node, Express, Flask, Jest, Jasmine, etc.
+        </p>
 
-	  <div class="centered-element">
-    <h1>XML Data Display</h1>
+        <h2>Documents</h2>
+        <ul>
+          <li>
+            <h3>Search Engine Optimization</h3>
+            <p>
+              from
+              <a href="http:/www.iu.org"
+                ><i>International University of Applied Sciences</i></a
+              >
+            </p>
+            <a
+              href="https://drive.google.com/file/d/10RRjPQ5zra9B4f4k04UvU0ylofEBKeaj/view?usp=share_link"
+              ><b>Search Engine Optimization</b></a
+            >
+          </li>
+          <li>
+            <h3>User Experience Researcher</h3>
+            <p>
+              from
+              <a href="http:/www.iu.org"
+                ><i>International University of Applied Sciences</i></a
+              >
+            </p>
+            <a
+              href="https://drive.google.com/file/d/1GAgFE_ZXWbcVI33HR2FgzTGKi4HfoAZ3/view?usp=sharing"
+              ><b>Advance Your Skills as a User Experience Researcher</b></a
+            >
+          </li>
+          <!-- Add similar elements for other documents -->
+        </ul>
+      </section>
+    </section>
 
-    <button onclick="getData('data1.xml')">Data 1</button>
-    <button onclick="getData('data2.xml')">Data 2</button>
-    <button onclick="getData('data3.xml')">Data 3</button>
+    <section id="experience" class="section">
+		<section id="software_engineering" type="software_engineering">
+			<div id="introduction">
+			  <h2>Introduction</h2>
+			  <p>Introduction about my software engineering experience and skills.</p>
+			  <a href="https://docs.google.com/document/d/1vQtC0EbHee_K2bB_h8WwFTEPI-QaqxBSeTKAbBAlc1E/edit?usp=sharing">Software Engineer Resume</a>
+			</div>
+		  
+			<div id="focus">
+			  <h2>Focus</h2>
+			  <h3>Languages</h3>
+			  <ul>
+				<li>PHP</li>
+				<li>ActionScript</li>
+				<li>HTML</li>
+				<li>CSS</li>
+				<!-- Add more languages as needed -->
+			  </ul>
+			  <h3>Recent Focus</h3>
+			  <ul>
+				<li>JavaScript</li>
+				<li>Python</li>
+				<li>React</li>
+				<li>Node</li>
+				<li>Express</li>
+				<li>Flask</li>
+				<li>Testing in Jest and Jasmine</li>
+			  </ul>
+			</div>
+		  
+			<div id="projects">
+			  <h2>Projects</h2>
+			  <ul>
+				<li>
+				  <h3>WebCrawl</h3>
+				  <p>A project description.</p>
+				</li>
+				<li>
+				  <h3>Sketchbook</h3>
+				  <p>Another project description.</p>
+				</li>
+				<!-- Add more projects as needed -->
+			  </ul>
+			</div>
+		  
+			<div id="gamedev">
+			  <h2>Game Development</h2>
+			  <p>Start Year: 2002</p>
+			  <h3>Tools</h3>
+			  <ul>
+				<li>Game Maker</li>
+				<li>Basic</li>
+				<li>Java</li>
+			  </ul>
+			  <h3>Education</h3>
+			  <ul>
+				<li>Web Design I and II</li>
+				<li>Java I and II</li>
+			  </ul>
+			  <p>Certificate: Web Development Certificate</p>
+			  <h3>Development Focus</h3>
+			  <ul>
+				<li>JavaScript</li>
+				<li>React</li>
+				<li>Python</li>
+				<li>Node</li>
+				<li>Express</li>
+			  </ul>
+			  <h3>Game Links</h3>
+			  <ul>
+				<li><a href="https://store.steampowered.com/publisher/3ichael7ambert">Steam</a></li>
+				<li><a href="https://3ichael7ambert.itch.io">itch.io</a></li>
+			  </ul>
+			</div>
+		  
+			<div id="links">
+			  <h2>Links</h2>
+			  <ul>
+				<li><a href="http://www.github.com/3ichael7ambert">GitHub</a></li>
+			  </ul>
+			</div>
+		  </section>
+		  
+    </section>
 
-    <div id="data"></div>
-  </div>
+    <section id="music" class="section">
+      <!-- Music content -->
+    </section>
 
+    <section id="design" class="section">
+      <section id="graphic_illustrator" type="graphic_illustrator">
+        <div id="portraitography">
+          <h2>Portraitography</h2>
+          <p>Introduction about my portraitography work.</p>
+          <p>Placeholder for specific content related to portraitography.</p>
+          <p>Links:</p>
+          <ul>
+            <li>
+              <a href="https://www.deviantart.com/3ichael7ambert">DeviantArt</a>
+            </li>
+            <li><a href="https://www.behance.net/mikeylambert">Behance</a></li>
+            <li>
+              <a href="https://www.artstation.com/odonisorphane">ArtStation</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCNK96I3kJJTPuPom1DzXJww"
+                >YouTube Channel</a
+              >
+            </li>
+          </ul>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/k9ClZYGLuKk?si=J6qzJnysgSVeGf1y"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
 
-	
-	<section id="section-1" class="hide">
-		<h2>Project 1</h2>
-		<p>More detailed information about project 1.</p>
-		<p><a href="#">Link to project 1</a></p>
-	</section>
-	<section id="section-2" class="hide">
-		<h2>Project 2</h2>
-		<p>More detailed information about project 2.</p>
-		<p><a href="#">Link to project 2</a></p>
-	</section>
-	<section id="section-3" class="hide">
-		<h2>Project 3</h2>
-		<p>More detailed information about project 3.</p>
-		<p><a href="#">Link to project 3</a></p>
-	</section>
-	<section id="section-4" class="hide">
-		<h2>Project 4</h2>
-		<p>More detailed information about project 4.</p>
-		<p><a href="#">Link to project 4</a></p>
-	</section>
-	<section>
-		<h2>Contact Me</h2>
-		<form>
-			<label for="name">Name:</label>
-			<input type="text" id="name" name="name" required>
-			<label for="email">Email:</label>
-			<input type="email" id="email" name="email" required>
-			<label for="message">Message:</label>
-			<textarea id="message" name="message" required></textarea>
-			<input type="submit" value="Send">
-		</form>
-	</section>
-	
-	<script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/70fd1b28eb.js" crossorigin="anonymous"></script>
+        <div id="fine_arts">
+          <h2>Fine Arts</h2>
+          <p>Introduction about my various fine arts.</p>
+          <p>Placeholder for specific content related to various fine arts.</p>
+          <p>Links:</p>
+          <ul>
+            <li>
+              <a href="https://www.deviantart.com/3ichael7ambert">DeviantArt</a>
+            </li>
+            <li><a href="https://www.behance.net/mikeylambert">Behance</a></li>
+            <li>
+              <a href="https://www.artstation.com/odonisorphane">ArtStation</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCNK96I3kJJTPuPom1DzXJww"
+                >YouTube Channel</a
+              >
+            </li>
+          </ul>
+        </div>
 
-</body>
+        <div id="animations">
+          <h2>Animations</h2>
+          <p>Introduction about my animations.</p>
+          <p>Placeholder for specific content related to animations.</p>
+          <p>Links:</p>
+          <ul>
+            <li>
+              <a href="https://www.deviantart.com/3ichael7ambert">DeviantArt</a>
+            </li>
+            <li><a href="https://www.behance.net/mikeylambert">Behance</a></li>
+            <li>
+              <a href="https://www.artstation.com/odonisorphane">ArtStation</a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/channel/UCNK96I3kJJTPuPom1DzXJww"
+                >YouTube Channel</a
+              >
+            </li>
+            <li>
+              360 Animations Playlist:
+              <a
+                href="https://www.youtube.com/watch?v=WWFhvThEQEU&list=PLlOnbBlE5oPHXuhqEjF_8jNxYi1lieI6Y"
+                >Link to Playlist</a
+              >
+            </li>
+          </ul>
+          <p>Embedded YouTube Video:</p>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/GgOpfQE2cyM?si=AX6CuAKR8DX1biBB"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+    </section>
+
+    <section id="book" class="section">
+		<section id="book_series">
+			<div id="image">
+			  <img src="imgs/miac.png" alt="Memorandum in a Cruet">
+			</div>
+			<div id="content">
+			  <h2>Memorandum in a Cruet</h2>
+			  <div>
+				<p>Embark on an extraordinary literary journey as you immerse yourself in the pages of "Memorandum in a Cruet." This remarkable memoir takes you on a profound exploration of resilience, self-discovery, and the transformative power of storytelling. Through captivating prose and heartfelt reflections, the author unveils the fragments of their life, intricately woven with tales of triumph and tribulation.</p>
+				<!-- More content here -->
+			  </div>
+			</div>
+			<div id="buy_links">
+			  <h3>Buy Links</h3>
+			  <ul>
+				<li><a href="https://g.co/kgs/LGVuEe1">Google Play</a></li>
+				<li><a href="https://www.barnesandnoble.com/w/memorandum-in-a-cruet-3ichael-7ambert/1115861110?ean=9780692758854">Barnes & Noble</a></li>
+				<li><a href="https://a.co/d/01nsyIF">Amazon</a></li>
+				<li><a href="https://www.facebook.com/MemorandumInACruet/">Facebook</a></li>
+				<li><a href="https://www.walmart.com/ip/Memorandum-in-a-Cruet-Paperback-9780692758854/537401173">Walmart</a></li>
+				<li><a href="https://www.target.com/p/memorandum-in-a-cruet-by-michael-andrew-lambert-paperback/-/A-88739023#lnk=sametab">Target</a></li>
+			  </ul>
+			</div>
+			<div id="amazon_embed">
+			  <iframe type="text/html" sandbox="allow-scripts allow-same-origin allow-popups" width="336" height="550" frameborder="0" allowfullscreen style="max-width:100%" src="https://read.amazon.com/kp/card?asin=B00E3088BG&preview=inline&linkCode=kpe&ref_=cm_sw_r_kb_dp_7Z8SVRKS8HRK8K2KN6T2&tag=michaellamber-20"></iframe>
+			</div>
+		  </section>
+		  
+		  <section id="additional_books">
+			<h2>Additional Books</h2>
+			<div>
+			  <img src="imgs/miac-deluxe.jpg" alt="Memorandum in a Cruet: Deluxe">
+			  <h3>Memorandum in a Cruet: Deluxe</h3>
+			  <p>A colorful deluxe version in the series</p>
+			</div>
+			<div>
+			  <img src="imgs/miac-forbidden.jpg" alt="Memorandum in a Cruet: Forbidden Chronicles">
+			  <h3>Memorandum in a Cruet: Forbidden Chronicles</h3>
+			</div>
+			<div>
+			  <img src="imgs/miac-tears.jpg" alt="Memorandum in a Cruet: Tears of Resilience">
+			  <h3>Memorandum in a Cruet: Tears of Resilience</h3>
+			</div>
+		  </section>
+		  
+		  <section id="reviews">
+			<h2>Reviews</h2>
+			<div>
+			  <h3>Corey Shamblin - January 8, 2024</h3>
+			  <p>Quick and thought-provoking read!</p>
+			  <p>Thought-provoking poems from different perspectives. I enjoy the creativity in each page and the art that accompanies the poems. Excited to read other works by this Author. At under 200 pages I finished it in just a couple of days and was ready for more!</p>
+			</div>
+			<div>
+			  <h3>Deanna - January 8, 2024</h3>
+			  <p>BUY IT NOW! YOU'RE MISSING OUT!</p>
+			  <p>Inspiring talented poet that shows passion in their books. Would highly recommend.</p>
+			</div>
+		  </section>
+		  </author>
+		  
+    </section>
+
+    <section id="clothing" class="section">
+		<section id="stores">
+			<div id="store">
+			  <h2>Stores</h2>
+			  <div>
+				<h3>Gumroad</h3>
+				<p><a href="https://3ichael7ambert.gumroad.com/">https://3ichael7ambert.gumroad.com/</a></p>
+				<p>Sell custom Procreate and Photoshop brushes, as well as soundfonts and green screen videos.</p>
+			  </div>
+			  <div>
+				<h3>Redbubble</h3>
+				<p><a href="https://www.redbubble.com/people/OdonisOrphane/">https://www.redbubble.com/people/OdonisOrphane/</a></p>
+				<p>Sell various merchandise.</p>
+			  </div>
+			  <div>
+				<h3>Society6</h3>
+				<p><a href="https://society6.com/3ichael7ambert/">https://society6.com/3ichael7ambert/</a></p>
+				<p>Sell various merchandise.</p>
+			  </div>
+			  <div>
+				<h3>eBay</h3>
+				<p><a href="https://www.ebay.com/usr/3ichael7ambert">https://www.ebay.com/usr/3ichael7ambert</a></p>
+				<p>Sell various merchandise.</p>
+			  </div>
+			</div>
+		  </section>
+		  
+		  <section id="images">
+			<h2>Images</h2>
+			<img src="imgs/shirt-tropical.jpg" alt="Tropical Shirt">
+			<img src="imgs/muskrats-prints.jpg" alt="Muskrats Prints">
+			<img src="imgs/shirt-sketchbook.png" alt="Sketchbook Shirt">
+			<img src="imgs/shirt-spray.jpg" alt="Spray Shirt">
+			<img src="imgs/shirt-cherry.jpg" alt="Cherry Shirt">
+		  </section>
+		  
+    </section>
+
+    <script src="script.js"></script>
+  </body>
 </html>
