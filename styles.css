@@ -42,11 +42,6 @@ body {
 }
 
 /* Customize styles for each section as needed */
-#introduction img {
-  max-width: 100px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
 
 #experience {
   background-color: #ccc;
@@ -103,14 +98,17 @@ body {
 /* styles.css */
 
 header {
-  background-color: #f0f0f0;
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full viewport height */
 }
 
+/* Center horizontally */
 .header-container {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .header-content {
@@ -153,5 +151,110 @@ nav ul li a:hover {
 }
 
 .img-link {
-  max-width: 50px;
+  width: 30px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+#introduction img:first-child,
+#introduction img:last-child {
+  width: 150px;
+  border-radius: 50%;
+  height: auto; /* Maintain aspect ratio */
+
+  margin-bottom: 10px;
+}
+
+#education {
+  background-color: #ccc;
+}
+
+.education-container {
+  padding: 20px;
+}
+
+.education-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 1;
+  padding: 10px;
+}
+
+.column h3 {
+  margin-bottom: 5px;
+}
+
+.column p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
+.section {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.education-container,
+.resume-container,
+.certificate-container {
+  margin-bottom: 30px;
+}
+
+.education-details {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.education-item {
+  flex: 0 0 calc(33.333% - 20px); /* Adjust width based on the number of items */
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.education-item h3 {
+  margin-bottom: 5px;
+}
+
+.resume-list,
+.certificate-list {
+  list-style: none;
+  padding: 0;
+}
+
+.resume-list li,
+.certificate-list li {
+  margin-bottom: 10px;
+}
+
+.resume-list a,
+.certificate-list a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.resume-list a:hover,
+.certificate-list a:hover {
+  color: #666;
+}
+
+.skill-container {
+  margin-bottom: 30px;
+}
+
+.skill-container h2 {
+  margin-bottom: 10px;
+}
+
+.skill-container p {
+  margin-bottom: 20px;
 }
